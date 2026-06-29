@@ -1,7 +1,7 @@
 
 <div align="center">
 
-  <img src="./screenshots/logo.jpeg" alt="PRAYNOW Logo" width="180" style="border-radius: 24px;" />
+  <img src="./logo.jpeg" alt="PRAYNOW Logo" width="3000" style="border-radius: 100px;" />
 
   <h1>PRAYNOW</h1>
   <p><strong>Aplikasi Pengingat Sholat, Jadwal Otomatis & AI Chat Islami</strong></p>
