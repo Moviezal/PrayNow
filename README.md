@@ -1,9 +1,9 @@
 
-<div align="center">
+readme_content = """<div align="center">
 
-  <img src="./logo.jpeg" alt="PRAYNOW Logo" width="3000" style="border-radius: 100px;" />
+  <img src="./screenshots/logo.png" alt="PRAYNOW Logo" width="3000" style="border-radius: 100px;" />
 
-  <h1>PRAYNOW</h1>
+  <h1>🕌 PRAYNOW</h1>
   <p><strong>Aplikasi Pengingat Sholat, Jadwal Otomatis & AI Chat Islami</strong></p>
 
   <p>
@@ -40,20 +40,22 @@ Dibangun dengan pendekatan **UI/UX sederhana & user-friendly**, PRAYNOW hadir se
 
 ## 📸 Screenshot
 
-### 🚀 Onboarding & Autentikasi
-| Splash Screen | Opening Screen | Location Picker |
+> 💡 **Tip:** Taruh semua file `.png` di folder `screenshots/` di root project agar gambar muncul otomatis.
+
+### 🚀 Onboarding & Branding
+| Logo / Splash | Opening Screen | Greeting Screen |
 |:---:|:---:|:---:|
-| <img src="./screenshots/Splash.jpeg" width="200" /> | <img src="./screenshots/opening.jpeg" width="200" /> | <img src="./screenshots/location.jpeg" width="200" /> |
+| <img src="./screenshots/logo.png" width="200" /> | <img src="./screenshots/opening.png" width="200" /> | <img src="./screenshots/greeting.png" width="200" /> |
 
 ### 🕌 Jadwal & Pengingat
-| Greeting | Jadwal Sholat | Alarm & Notifikasi |
-|:---:|:---:|:---:|
-| <img src="./screenshots/greeting.jpeg" width="200" /> | <img src="./screenshots/jadwal.jpeg" width="200" /> | <img src="./screenshots/alarm.jpeg" width="200" /> |
+| Jadwal Sholat | Notifikasi & Alarm |
+|:---:|:---:|
+| <img src="./screenshots/jadwal.png" width="200" /> | <img src="./screenshots/notifikasi.png" width="200" /> |
 
 ### 🤖 AI & Edukasi
 | AI Chat Islami | Library Buku | Detail Buku |
 |:---:|:---:|:---:|
-| <img src="./screenshots/ai.jpeg" width="200" /> | <img src="./screenshots/library.jpeg" width="200" /> | <img src="./screenshots/book.jpeg" width="200" /> |
+| <img src="./screenshots/ai.png" width="200" /> | <img src="./screenshots/library.png" width="200" /> | <img src="./screenshots/book.png" width="200" /> |
 
 ---
 
@@ -111,6 +113,14 @@ PrayNow/
 │   │   └── 📂 assets/                  # Buku PDF / JSON static
 │   └── 📂 build.gradle                 # App-level Gradle
 ├── 📂 screenshots/                     # 📸 Screenshot aplikasi (untuk README)
+│   ├── logo.png
+│   ├── opening.png
+│   ├── greeting.png
+│   ├── jadwal.png
+│   ├── notifikasi.png
+│   ├── ai.png
+│   ├── library.png
+│   └── book.png
 ├── 📂 docs/                            # Dokumentasi tambahan
 ├── 📄 build.gradle (Project)
 ├── 📄 settings.gradle
@@ -176,7 +186,9 @@ Ikuti langkah-langkah berikut untuk menjalankan project ini secara lokal:
 | Resource | Link |
 |----------|------|
 | 🐙 GitHub Repository | [github.com/Moviezal/PrayNow](https://github.com/Moviezal/PrayNow) |
-| 📋 SCRUM Board (ClickUp) | [My ClickUp](https://app.clickup.com/90181837079/v/li/901812053540) |
+| 📋 SCRUM Board (ClickUp) | *(Tambahkan link ClickUp-mu di sini)* |
+| 📱 Download APK (Release) | [GitHub Releases](https://github.com/Moviezal/PrayNow/releases) *(jika sudah ada)* |
+
 ---
 
 ## 🗺️ Roadmap
@@ -217,3 +229,11 @@ Project ini dilisensikan di bawah [MIT License](LICENSE).
   <p>© 2024 — PRAYNOW Team</p>
 </div>
 """
+
+# Save to output
+output_path = "/mnt/agents/output/README.md"
+with open(output_path, "w", encoding="utf-8") as f:
+    f.write(readme_content)
+
+print(f"README.md updated and saved to {output_path}")
+print(f"Total characters: {len(readme_content)}")
