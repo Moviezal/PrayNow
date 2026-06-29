@@ -1,7 +1,7 @@
 
-readme_content = """<div align="center">
+<div align="center">
 
-  <img src="./screenshots/Splash.jpeg" alt="PRAYNOW Logo" width="180" style="border-radius: 24px;" />
+  <img src="./screenshots/logo.jpeg" alt="PRAYNOW Logo" width="180" style="border-radius: 24px;" />
 
   <h1>PRAYNOW</h1>
   <p><strong>Aplikasi Pengingat Sholat, Jadwal Otomatis & AI Chat Islami</strong></p>
@@ -39,8 +39,6 @@ Dibangun dengan pendekatan **UI/UX sederhana & user-friendly**, PRAYNOW hadir se
 ---
 
 ## 📸 Screenshot
-
-> 💡 **Tip:** Taruh semua file `.jpeg` di folder `screenshots/` di root project agar gambar muncul otomatis.
 
 ### 🚀 Onboarding & Autentikasi
 | Splash Screen | Opening Screen | Location Picker |
@@ -178,9 +176,7 @@ Ikuti langkah-langkah berikut untuk menjalankan project ini secara lokal:
 | Resource | Link |
 |----------|------|
 | 🐙 GitHub Repository | [github.com/Moviezal/PrayNow](https://github.com/Moviezal/PrayNow) |
-| 📋 SCRUM Board (ClickUp) | *([My ClickUp](https://app.clickup.com/90181837079/v/li/901812053540) |
-| 📱 Download APK (Release) | [GitHub Releases](https://github.com/Moviezal/PrayNow/releases) *(jika sudah ada)* |
-
+| 📋 SCRUM Board (ClickUp) | [My ClickUp](https://app.clickup.com/90181837079/v/li/901812053540) |
 ---
 
 ## 🗺️ Roadmap
