@@ -1,9 +1,9 @@
 
-readme_content = """<div align="center">
+<div align="center">
 
   <img src="./screenshots/logo.png" alt="PRAYNOW Logo" width="3000" style="border-radius: 100px;" />
 
-  <h1>🕌 PRAYNOW</h1>
+  <h1>PRAYNOW</h1>
   <p><strong>Aplikasi Pengingat Sholat, Jadwal Otomatis & AI Chat Islami</strong></p>
 
   <p>
@@ -14,14 +14,6 @@ readme_content = """<div align="center">
     <img src="https://img.shields.io/badge/PRs-Welcome-brightgreen.svg" />
   </p>
 
-  <p>
-    <a href="#-screenshot">Screenshot</a> •
-    <a href="#-fitur-utama">Fitur</a> •
-    <a href="#-tech-stack">Tech Stack</a> •
-    <a href="#-instalasi">Instalasi</a> •
-    <a href="#-penggunaan">Penggunaan</a>
-  </p>
-
 </div>
 
 ---
@@ -29,30 +21,27 @@ readme_content = """<div align="center">
 ## 📖 Deskripsi
 
 **PRAYNOW** adalah aplikasi Android all-in-one yang dirancang khusus untuk membantu umat Muslim dalam:
-- 🕰️ Mengingat waktu sholat dengan **jadwal otomatis berbasis lokasi**
-- 📚 Mengakses **koleksi buku Islam** sebagai sumber pembelajaran
-- 🤖 Berinteraksi dengan **AI Chat Islami** untuk tanya-jawab keislaman
-- 🔔 Mendapatkan **notifikasi & alarm adzan** tepat waktu
+- Mengingat waktu sholat dengan **jadwal otomatis berbasis lokasi**
+- Mengakses **koleksi buku Islam** sebagai sumber pembelajaran
+- Berinteraksi dengan **AI Chat Islami** untuk tanya-jawab keislaman
+- Mendapatkan **notifikasi & alarm adzan** tepat waktu
 
 Dibangun dengan pendekatan **UI/UX sederhana & user-friendly**, PRAYNOW hadir sebagai solusi praktis ibadah dan belajar dalam satu genggaman.
 
 ---
 
 ## 📸 Screenshot
-
-> 💡 **Tip:** Taruh semua file `.png` di folder `screenshots/` di root project agar gambar muncul otomatis.
-
-### 🚀 Onboarding & Branding
+### Onboarding & Branding
 | Logo / Splash | Opening Screen | Greeting Screen |
 |:---:|:---:|:---:|
-| <img src="./screenshots/logo.png" width="200" /> | <img src="./screenshots/opening.png" width="200" /> | <img src="./screenshots/greeting.png" width="200" /> |
+| <img src="./screenshots/splash.png" width="200" /> | <img src="./screenshots/opening.png" width="200" /> | <img src="./screenshots/greeting.png" width="200" /> |
 
-### 🕌 Jadwal & Pengingat
+### Jadwal & Pengingat
 | Jadwal Sholat | Notifikasi & Alarm |
 |:---:|:---:|
 | <img src="./screenshots/jadwal.png" width="200" /> | <img src="./screenshots/notifikasi.png" width="200" /> |
 
-### 🤖 AI & Edukasi
+### AI & Edukasi
 | AI Chat Islami | Library Buku | Detail Buku |
 |:---:|:---:|:---:|
 | <img src="./screenshots/ai.png" width="200" /> | <img src="./screenshots/library.png" width="200" /> | <img src="./screenshots/book.png" width="200" /> |
@@ -186,9 +175,7 @@ Ikuti langkah-langkah berikut untuk menjalankan project ini secara lokal:
 | Resource | Link |
 |----------|------|
 | 🐙 GitHub Repository | [github.com/Moviezal/PrayNow](https://github.com/Moviezal/PrayNow) |
-| 📋 SCRUM Board (ClickUp) | *(Tambahkan link ClickUp-mu di sini)* |
-| 📱 Download APK (Release) | [GitHub Releases](https://github.com/Moviezal/PrayNow/releases) *(jika sudah ada)* |
-
+| 📋 SCRUM Board (ClickUp) | [ClickUp/PrayNow](https://app.clickup.com/90181837079/v/li/901812053540) |
 ---
 
 ## 🗺️ Roadmap
@@ -216,24 +203,18 @@ Kontribusi selalu terbuka! Jika ingin berkontribusi:
 4. Push ke branch (`git push origin feature/fitur-keren`)
 5. Buka **Pull Request**
 
----
 
-## 📜 Lisensi
+⸻
 
-Project ini dilisensikan di bawah [MIT License](LICENSE).
+📜 Lisensi
 
----
+Proyek ini didistribusikan di bawah lisensi MIT License, yang memberikan kebebasan kepada siapa pun untuk menggunakan, menyalin, memodifikasi, dan mendistribusikan perangkat lunak ini, dengan tetap mencantumkan atribusi kepada pengembang asli.
+
+Untuk informasi lebih lanjut, silakan lihat file LICENSE.
+
+⸻
 
 <div align="center">
-  <p><strong>Dibuat dengan 💚 untuk umat Muslim</strong></p>
-  <p>© 2024 — PRAYNOW Team</p>
+  <p><strong>Dikembangkan dengan dedikasi untuk mendukung kemudahan ibadah umat Muslim</strong></p>
+  <p>© 2026 — PRAYNOW Team. All rights reserved.</p>
 </div>
-"""
-
-# Save to output
-output_path = "/mnt/agents/output/README.md"
-with open(output_path, "w", encoding="utf-8") as f:
-    f.write(readme_content)
-
-print(f"README.md updated and saved to {output_path}")
-print(f"Total characters: {len(readme_content)}")
