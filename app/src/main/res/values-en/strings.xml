@@ -1,0 +1,43 @@
+<resources>
+
+    <!-- ================= APP ================= -->
+    <string name="app_name">PrayNow</string>
+    <string name="back">Back</string>
+
+    <!-- ================= LANGUAGE ================= -->
+    <string name="lang_code">EN</string>
+
+    <!-- ================= OPENING SCREEN ================= -->
+    <string name="greeting">Assalamu’alaikum\nPrayNow Friend!</string>
+    <string name="skip">Skip</string>
+
+    <!-- ================= GREETING SCREEN ================= -->
+    <string name="greeting_message">
+        Be more disciplined in worship.
+        Let’s start with PrayNow!
+    </string>
+    <string name="btn_mulai">Start</string>
+
+    <!-- ================= HOME / SHOLAT ================= -->
+    <string name="sholat_activity_greeting">Hello</string>
+    <string name="user_name_placeholder">Muhammad Hafizh Alfauzi</string>
+
+    <!-- Prayer Names -->
+    <string name="subuh">Fajr</string>
+    <string name="dzuhur">Dhuhr</string>
+    <string name="ashar">Asr</string>
+    <string name="maghrib">Maghrib</string>
+    <string name="isya">Isha</string>
+
+    <!-- ================= BOOK ================= -->
+    <string name="book_title">Islamic\nBooks</string>
+    <string name="rukun_islam">Pillars of Islam</string>
+    <string name="rukun_iman">Pillars of Faith</string>
+    <string name="ihsan">Ihsan</string>
+    <string name="pilar_amal">Good Deeds</string>
+
+    <!-- ================= NOTIFICATION ================= -->
+    <string name="notif_adzan_title">Adzan\nNotification</string>
+    <string name="notif_adzan_content">Prayer time has arrived</string>
+
+</resources>

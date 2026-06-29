@@ -1,0 +1,226 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main">
+
+    
+
+    <!-- BACK -->
+    <ImageView
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:clickable="true"
+        android:contentDescription="back"
+        android:focusable="true"
+        android:src="@drawable/ic_back" />
+
+    <!-- HEADER -->
+    <LinearLayout
+        android:id="@+id/headerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnBack"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="80dp"
+        android:orientation="vertical">
+
+        <!-- LOGO -->
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_grup"
+            android:contentDescription="logo"
+            android:scaleType="fitStart"/>
+
+        <!-- TITLE -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/book_title"
+            android:textColor="#FFFFFF"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppinsbold"
+            android:lineSpacingExtra="-9dp"/>
+    </LinearLayout>
+
+    <!-- CARD -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardBook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottomNav"
+        android:layout_below="@id/headerText"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="120dp"
+        app:cardCornerRadius="28dp"
+        app:cardElevation="8dp"
+        app:cardBackgroundColor="#F2F2F2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- ISI TETAP SAMA -->
+
+            <!-- ROW 1 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/btnRukunIslam"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:backgroundTint="#F4A940"
+                        android:background="@android:color/white"
+                        android:padding="20dp"
+                        android:src="@drawable/islam_lg"/>
+
+                    <TextView
+                        android:layout_marginTop="8dp"
+                        android:text="Rukun Islam"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:textSize="14sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/btnRukunIman"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:backgroundTint="#4DB6E2"
+                        android:background="@android:color/white"
+                        android:padding="20dp"
+                        android:src="@drawable/iman_lg"/>
+
+                    <TextView
+                        android:layout_marginTop="8dp"
+                        android:text="Rukun Iman"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:textSize="14sp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- ROW 2 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/btnIhsan"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:backgroundTint="#39B54A"
+                        android:background="@android:color/white"
+                        android:padding="20dp"
+                        android:src="@drawable/ihsan_lg"/>
+
+                    <TextView
+                        android:layout_marginTop="8dp"
+                        android:text="Apa itu Ihsan?"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:textSize="14sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/btnPilarAmal"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:backgroundTint="#FF4C4C"
+                        android:background="@android:color/white"
+                        android:padding="20dp"
+                        android:src="@drawable/pilar_lg"/>
+
+                    <TextView
+                        android:layout_marginTop="8dp"
+                        android:text="Pilar Amal"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:textSize="14sp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+    <!-- BOTTOM NAV (TIDAK DIUBAH) -->
+    <LinearLayout
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@drawable/ic_bcbutton"
+        android:elevation="10dp">
+
+        <ImageView
+            android:id="@+id/navAlarm"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_alarmg"
+            app:tint="#FFFFFF"/>
+
+        <ImageView
+            android:id="@+id/navHome"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_homeg"
+            app:tint="#FFFFFF"/>
+
+        <ImageView
+            android:id="@+id/navAdd"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_setting"
+            app:tint="#FFFFFF"/>
+    </LinearLayout>
+
+</RelativeLayout>

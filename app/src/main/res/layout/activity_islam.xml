@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_book">
+
+    <!-- BACK BUTTON -->
+
+    <!-- JUDUL -->
+
+    <!-- ISI (PLACEHOLDER) -->
+
+    <ImageView
+        android:id="@+id/btnBack"
+        android:layout_width="17dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="76dp"
+        android:contentDescription="Back"
+        android:src="@drawable/btn_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtJudul"
+        android:layout_width="342dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="@font/poppinsextrabold"
+        android:letterSpacing="-0.03"
+        android:text="Rukun Islam"
+        android:textColor="#1E1E1E"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnBack" />
+
+    <TextView
+        android:id="@+id/txtIsi"
+        android:layout_width="902dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="@font/poppinsbold"
+        android:letterSpacing="-0.01"
+        android:lineSpacingExtra="9dp"
+        android:text="1. Mengucapkan dua kalimat syahadat\n2. Mendirikan shalat.
+\n3. Menunaikan zakat.
+\n4. Berpuasa di bulan Ramadhan.
+\n5. Menunaikan ibadah haji bagi yang mampu."
+        android:textColor="#444444"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtJudul" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

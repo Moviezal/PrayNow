@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_bc"
+        android:padding="20dp">
+
+        <!-- LOGO + BULAN (hanya PrayNow) -->
+        <LinearLayout
+            android:id="@+id/sectionLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/imgPrayNow"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_grup"
+                android:layout_gravity="center" />
+
+        </LinearLayout>
+
+        <!-- GREETING -->
+        <LinearLayout
+            android:id="@+id/sectionGreeting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/sectionLogo"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:id="@+id/txtHalo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Halo,"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txtNama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Muhammad Hafizh Alfauzi"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppinsbold" />
+
+        </LinearLayout>
+
+        <!-- CARD JAM -->
+        <RelativeLayout
+            android:id="@+id/cardClock"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_below="@id/sectionGreeting"
+            android:layout_marginTop="20dp"
+            android:padding="20dp"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/ic_bcclock">
+
+            <TextView
+                android:id="@+id/txtClock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12:30"
+                android:textColor="#FFFFFF"
+                android:textSize="70sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppinsmedium" />
+
+        </RelativeLayout>
+
+        <!-- LIST WAKTU -->
+        <LinearLayout
+            android:id="@+id/listPrayer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/cardClock">
+
+            <!-- Subuh -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:padding="15dp"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/ic_bclist">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="   Subuh"
+                    android:textColor="#043A3A"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/timeSubuh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="04.11"
+                    android:textColor="#043A3A"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- Dzuhur -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:padding="15dp"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/ic_bclist">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="   Dzuhur"
+                    android:textColor="#043A3A"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/timeDzuhur"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="11.37"
+                    android:textColor="#043A3A"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- Ashar -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:padding="15dp"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/ic_bclist">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="   Ashar"
+                    android:textColor="#043A3A"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/timeAshar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="14.45"
+                    android:textColor="#043A3A"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- Maghrib -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:padding="15dp"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/ic_bclist">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="   Maghrib"
+                    android:textColor="#043A3A"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/timeMaghrib"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="17.44"
+                    android:textColor="#043A3A"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- Isya -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:padding="15dp"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="90dp"
+                android:background="@drawable/ic_bclist">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="   Isya"
+                    android:textColor="#043A3A"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/timeIsya"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="18.55"
+                    android:textColor="#043A3A"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- BOTTOM NAV -->
+        <LinearLayout
+            android:id="@+id/bottomNav"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:gravity="center"
+            android:background="@drawable/ic_bcbutton"
+            android:padding="10dp"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true">
+
+            <ImageView
+                android:id="@+id/navAlarm"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_alarmg"
+                app:tint="#FFFFFF" />
+
+            <ImageView
+                android:id="@+id/navHome"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_home"
+                app:tint="#FFFFFF" />
+
+            <ImageView
+                android:id="@+id/navAdd"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_settingg"
+                app:tint="#FFFFFF" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>
